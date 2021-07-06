@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html, body, .startGame {
+  width: 100%;
+  height: 100%;
+  background-color: #FF9D00;
+}
+
+.startGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.startGame .textContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.startGame .textContent .challenge {
+  font-size: 96px;
+  margin-left: 24px;
+}
+
+.startGame .textContent .challenge p {
+  position: absolute;
+  font-size: 40px;
+  right: 0;
+  top: 60px;
+  color: #FFFFFF;
+  border-bottom: 4px solid #fff;
+  text-decoration: underline;
+}
+
+.startGame .textContent .sec60 {
+  color: #fff;
+  text-shadow: 12px 0px 0px #000;
+  font-size: 240px;
+}
+
+.startGame .startButton {
+  height: 58px;
+  width: 350px;
+  background-color: #000000;
+  color: #FF9D00;
+  margin-top: 104px;
+  font-size: 36px;
+  border: none;
+}
+
+.startGame .try {
+  color: #fff;
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */

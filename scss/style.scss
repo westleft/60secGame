@@ -1,0 +1,64 @@
+@mixin flex($a,$j){
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+}
+
+@mixin size($h,$w){
+    height: $h;
+    width: $w;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    // border: 2px solid;
+}
+
+html,body,.startGame {
+    width: 100%;
+    height: 100%;
+    background-color: #FF9D00;
+}
+
+.startGame {
+    @include flex(center,center);
+    flex-direction: column;
+    .textContent {
+        @include flex(center,center);
+        position: relative;
+        .challenge {
+            font-size: 96px;
+            margin-left: 24px;
+            p {
+                position: absolute;
+                font-size: 40px;
+                right: 0;
+                top: 60px;
+                color: #FFFFFF;
+                border-bottom: 4px solid #fff;
+                text-decoration: underline
+            }
+        }
+        .sec60 {
+            color: #fff;
+            text-shadow: 12px 0px 0px #000;
+            font-size: 240px;
+        }
+    }
+
+    .startButton {
+        @include size(58px,350px);
+        background-color: #000000;
+        color: #FF9D00;
+        margin-top: 104px;
+        font-size: 36px;
+        border: none;
+    }
+    .try {
+        color: #fff;
+        font-size: 24px;
+    }
+}
