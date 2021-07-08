@@ -17,7 +17,7 @@
     // border: 2px solid;
 }
 
-html,body,.startGame {
+html,body,.startGame,.playGame {
     width: 100%;
     height: 100%;
     background-color: #FF9D00;
@@ -60,5 +60,68 @@ html,body,.startGame {
     .try {
         color: #fff;
         font-size: 24px;
+    }
+}
+
+.playGame {
+    @include flex(center,center);
+    flex-direction: column;
+
+    .topContainer {
+        @include flex(center,center);
+        .slogan {
+            margin-right: 114px;
+            .socreBox {
+                display: flex;
+            }
+            .sloganText {
+                color: #fff;
+                font-size: 30px;
+                border: solid 5px #fff;
+                padding: 8px 16px;
+            }
+            .score {
+                background-color: #fff;
+                color: #FF9D00;
+                font-size: 30px;
+                padding: 12px 16px;
+                font-weight: 600;
+            }
+            .scoreText {
+                @include flex(center,center);
+                font-size: 44px;
+                font-weight: 800;
+                margin-left: 8px;
+            }
+
+        }
+        .time {
+            color: #fff;
+            font-size: 96px;
+        }
+    }
+    .question {
+        @include flex(center,space-around);
+        margin-top: 110px;
+        position: relative;
+        p,input {
+            font-size: 112px;
+            font-weight: 600;
+            margin: 20px;
+        }
+        input {
+            @include flex(center,center);
+            @include size(131px, 225px);
+            border: none;
+            text-align: center;
+        }
+        .text {
+            position: absolute;
+            font-size: 24px;
+            font-weight: 100;
+            right: 12px;
+            bottom: -32px;
+            color: #fff;
+        }
     }
 }

@@ -6,7 +6,7 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-html, body, .startGame {
+html, body, .startGame, .playGame {
   width: 100%;
   height: 100%;
   background-color: #FF9D00;
@@ -75,5 +75,122 @@ html, body, .startGame {
 .startGame .try {
   color: #fff;
   font-size: 24px;
+}
+
+.playGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.playGame .topContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.playGame .topContainer .slogan {
+  margin-right: 114px;
+}
+
+.playGame .topContainer .slogan .socreBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.playGame .topContainer .slogan .sloganText {
+  color: #fff;
+  font-size: 30px;
+  border: solid 5px #fff;
+  padding: 8px 16px;
+}
+
+.playGame .topContainer .slogan .score {
+  background-color: #fff;
+  color: #FF9D00;
+  font-size: 30px;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+.playGame .topContainer .slogan .scoreText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 44px;
+  font-weight: 800;
+  margin-left: 8px;
+}
+
+.playGame .topContainer .time {
+  color: #fff;
+  font-size: 96px;
+}
+
+.playGame .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 110px;
+  position: relative;
+}
+
+.playGame .question p, .playGame .question input {
+  font-size: 112px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.playGame .question input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 131px;
+  width: 225px;
+  border: none;
+  text-align: center;
+}
+
+.playGame .question .text {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 100;
+  right: 12px;
+  bottom: -32px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
