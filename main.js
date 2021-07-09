@@ -3,6 +3,7 @@ let number2 = document.querySelector('.number2')
 let operator = document.querySelector('.operator')
 let scoreText = document.querySelector('.scoreText')
 let secondsTime = document.querySelector('.secondsTime')
+let finalScore = document.querySelector('.finalScore')
 
 let input = document.querySelector("input")
 
@@ -10,7 +11,7 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-// 做四種運算ㄏㄏ
+// 隨機產生四種運算
 function calc(num1, num2, operatorNum) {
     switch (operatorNum) {
         case 1:
@@ -66,8 +67,8 @@ function setQuestion() {
         number1.textContent = getRandom(10, 99)
         number2.textContent = getRandom(10, 99)
     } else {
-        number1.textContent = getRandom(100, 999)
-        number2.textContent = getRandom(100, 999)
+        number1.textContent = getRandom(1, 9)
+        number2.textContent = getRandom(1, 9)
     }
     input.value = ''
 }
@@ -82,10 +83,12 @@ function start() {
         }
         if (secondsTime.textContent == 0) {
             clearInterval(timer)
+            finalScore.textContent = scoreText.textContent
+            document.querySelector('.playGame').style.display = 'none'
+            document.querySelector('.endGame').style.display = 'flex'
         }
     }, 1000)
 }
-start()
 
 // 增加00
 function padding(num, length) {
@@ -95,7 +98,7 @@ function padding(num, length) {
     return padding("0" + num, length)
 }
 
-
+//判斷秒數(加分)
 function addPoint(sec,parseNum){
     sec = parseInt(sec)
     if(sec >=40 && sec <= 60){
@@ -104,3 +107,23 @@ function addPoint(sec,parseNum){
         scoreText.textContent = padding((parseNum += 5), 3)
     }
 }
+
+
+let startButton = document.querySelector('.startButton')
+let tryBtn = document.querySelector('.tryBtn')
+
+//遊戲開始按鈕
+startButton.addEventListener('click',function(){
+    document.querySelector('.startGame').style.display = 'none'
+    document.querySelector('.playGame').style.display = 'flex'
+    start()
+})
+
+//再玩一次
+tryBtn.addEventListener('click',function(){
+    document.querySelector('.playGame').style.display = 'flex'
+    document.querySelector('.endGame').style.display = 'none'
+    secondsTime.textContent = '60'
+    scoreText.textContent = '000'
+    start()
+})
