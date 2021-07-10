@@ -38,9 +38,12 @@ let result
 input.addEventListener('keyup', function (event) {
     //按下enter後
     if (event.keyCode == 13) {
+        
         checkAnswer()
         setQuestion()
         result = calc(number1.textContent, number2.textContent, getRandom(1, 4))
+        result = Math.floor(result)
+        console.log(result);
     }
 })
 
@@ -67,8 +70,8 @@ function setQuestion() {
         number1.textContent = getRandom(10, 99)
         number2.textContent = getRandom(10, 99)
     } else {
-        number1.textContent = getRandom(1, 9)
-        number2.textContent = getRandom(1, 9)
+        number1.textContent = getRandom(100, 999)
+        number2.textContent = getRandom(100, 999)
     }
     input.value = ''
 }

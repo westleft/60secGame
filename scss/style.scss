@@ -9,6 +9,18 @@
     width: $w;
 }
 
+@mixin pad{
+    @media(max-width:768px){
+      @content;
+    }
+}
+
+@mixin mobile{
+    @media(max-width:375px){
+      @content;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
