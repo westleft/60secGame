@@ -223,6 +223,12 @@ html, body, .startGame, .playGame, .endGame {
   outline: none;
 }
 
+.playGame .question input::-webkit-outer-spin-button,
+.playGame .question input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .playGame .question .text {
   position: absolute;
   font-size: 24px;

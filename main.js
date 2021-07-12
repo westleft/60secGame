@@ -38,12 +38,10 @@ let result
 input.addEventListener('keyup', function (event) {
     //按下enter後
     if (event.keyCode == 13) {
-        
         checkAnswer()
         setQuestion()
         result = calc(number1.textContent, number2.textContent, getRandom(1, 4))
         result = Math.floor(result)
-        console.log(result);
     }
 })
 
@@ -110,7 +108,6 @@ function addPoint(sec,parseNum){
         scoreText.textContent = padding((parseNum += 5), 3)
     }
 }
-
 
 let startButton = document.querySelector('.startButton')
 let tryBtn = document.querySelector('.tryBtn')

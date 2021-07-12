@@ -141,7 +141,12 @@ html,body,.startGame,.playGame,.endGame {
             text-align: center;
         }
         input:focus {
-            outline:none
+            outline:none;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
         .text {
             position: absolute;
