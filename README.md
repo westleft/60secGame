@@ -1,10 +1,34 @@
 # JS地下城 - 60秒算數遊戲
 
-* 【特定技術】遊戲規則
-*  0~20 秒為 1位數計算 (5-3)，21~40 秒為 2 位數計算 (30*19)，41~60 秒為 3 位數計算 (332+312)，加減乘除規則請用隨機產生，不可寫死題目，60 秒內可無限次數答題。
-*  0~40 秒答對加一分，41~60 秒答對加五分，答錯扣一分，最多僅能扣到零分
-* 【特定技術】不可設計跳轉頁面，都得在同一頁內部切換頁面完成。
+<img src="https://img.shields.io/badge/JavaScript-exercise-yellow">　<img src="https://img.shields.io/badge/CSS-exercise-blue">
 
-![](https://i.imgur.com/bupHTIP.jpg)
+![](https://i.imgur.com/UgvhGQa.jpg)
+
+## 產生隨機數
+```js
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+```
+
+## 隨機產生四種運算
+```js
+function calc(num1, num2, operatorNum) {
+    switch (operatorNum) {
+        case 1:
+            return num1 + num2
+            break
+        case 2:
+            return num1 - num2
+            break
+        case 3:
+            return num1 * num2
+            break
+        case 4:
+            return num1 / num2
+            break
+    }
+}
+```
 
 連結：https://westleft.github.io/60secGame/
