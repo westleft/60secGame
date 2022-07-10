@@ -1,57 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>60 SECONDS CHALLENGE</title>
-    <meta name="description" content="60秒猜數字遊戲，看看你能答對幾題！"/>
-    <meta property="og:image" content="image/og-image.jpg"/>
-    <link rel="icon" href="image/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="scss/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>60 秒猜數字遊戲</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <div class="startGame">
-        <div class="textContent">
-            <p class="sec60">60</p>
-            <div class="challenge">SECONDS </br>CHALLENGE
-                <p>+−×÷</p>
-            </div>
-        </div>
-        <button class="startButton">START!</button>
-        <p class="try"><i>try to answer more as you can</i></p>
-    </div>
-
-    <div class="playGame">
-        <div class="topContainer">
-            <div class="slogan">
-                <p class="sloganText">60 SECOND CHALLENGE</p>
-                <div class="socreBox">
-                    <p class="score">SCORE</p>
-                    <p class="scoreText">000</p>
-                </div>                
-            </div>
-            <p class="time"><i>00 : <span class="secondsTime">60</span></i></p>
-        </div>
-        <div class="question">
-            <p class="number1">5</p>
-            <p class="operator">×</p>
-            <p class="number2">2</p>
-            <p class="equal">=</p>
-            <input type="number" value="" step="none">
-            <p class="text"><i>press enter to answer</i></p>
-        </div>
-    </div>
-    
-    <div class="endGame">
-        <p class="sloganText">60 SECOND CHALLENGE</p>
-        <h2 class="endText">YOUR FINAL SCORE</h2>
-        <p class="finalScore">74</p>
-        <button class="tryBtn">TRY AGAIN</button>
-    </div>
-
-    <script src="main.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

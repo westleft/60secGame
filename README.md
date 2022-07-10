@@ -1,34 +1,11 @@
-# JS地下城 - 60秒算數遊戲
+# JS地下城 60秒算數遊戲
 
-<img src="https://img.shields.io/badge/JavaScript-exercise-yellow">　<img src="https://img.shields.io/badge/CSS-exercise-blue">
+<img src="https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white&logoWidth=24" alt="vite勳章"/> <img src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white&logoWidth=24" alt="vue.js勳章"/> <img src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&logoWidth=24"></br>
 
 ![](https://i.imgur.com/UgvhGQa.jpg)
 
-## 產生隨機數
-```js
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-```
+▎連結：https://westleft.github.io/60secGame/
 
-## 隨機產生四種運算
-```js
-function calc(num1, num2, operatorNum) {
-    switch (operatorNum) {
-        case 1:
-            return num1 + num2
-            break
-        case 2:
-            return num1 - num2
-            break
-        case 3:
-            return num1 * num2
-            break
-        case 4:
-            return num1 / num2
-            break
-    }
-}
-```
+設計稿由六角學院所提供，詳細請參考[新手 JS 地下城](https://courses.hexschool.com/p/javascript-js)。
 
-連結：https://westleft.github.io/60secGame/
+最初使用原生 JS，近期因練習 Vue & TypeScript 將程式重構。
